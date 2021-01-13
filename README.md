@@ -1,1 +1,1 @@
-# rsschool-cv
+https://vitaliystepanovich/rsschool-cv/cv
