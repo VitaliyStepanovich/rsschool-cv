@@ -2,7 +2,7 @@
 
 ## Contacts
 
-Facebook: [link](https://www.facebook.com/vitaly.garshin.1/)
+Facebook: [vitaly.garshin.1](https://www.facebook.com/vitaly.garshin.1/)
 
 Email: vitaliys.garshin@gmail.com
 
