@@ -1,64 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML CV </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>    
+<body>      
 <header class="header">
-    <div class="container">
-        <h1>Vitaliy Garshin</h1>
-    </div>        
-</header>
-<section class="content">
-    <div class="container">
-        <div class="content__photo"></div>
-            <div class="content__contacts">                
-                <h2>Contacts</h2>
-                <ul>
-                    <li>Facebook:<a href="vitaly.garshin.1"></a></li>
-                    <li>Email <a href="mailto: vitaliys.garshin@gmail.com"></a></li>
-                </ul>
-        </div>            
-    </div>
-</section>
-<section class="about">
-    <div class="container">
-        <h2>About me</h2>
-        <q>To get something you never had, you have to do something you never did.</q>
+    <div class="header__inner">       
     </div>    
-</section>
-<section class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-    </ul>
-</section>  
-<section class="code">
-    <div class="container">
-        <h2>Code example</h2>
-        <pre>
-            function (a,b) {
-                let c = a + b;
-                return c;
-            };
-        </pre>
+</header>
+<main class="main">
+  <section class="content">
+    <div class="content__table">
+      <div class="content__table-row">
+        <div class="content__table-cell">
+          <img class="content__face" src="assets/images/photo.jpg" alt="Фото">
+        </div>
+        <div class="content__table-cell">
+          <h1>Vitaliy Garshin</h1>                     
+          <ul>
+            <li>Facebook: <a target="_blank" href="https://www.facebook.com/vitaly.garshin.1">vitaly.garshin.1</a></li>
+            <li>Email: <a target="_blank" href="mailto: vitaliys.garshin@gmail.com">vitaliys.garshin@gmail.com</a></li>
+          </ul>
+       </div> 
+      </div>
+      <div class="content__table-row">
+        <div class="content__table-cell">About me</div>
+        <div class="content__table-cell">
+          <blockquote>
+            <p>To get something you never had, you have to do something you never did.</p>
+          </blockquote>                     
+        </div> 
+      </div>
+      <div class="content__table-row">
+        <div class="content__table-cell">Skills</div>
+        <div class="content__table-cell">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+         </ul>
+        </div> 
+      </div>
+      <div class="content__table-row">
+        <div class="content__table-cell">Code example</div>
+        <div class="content__table-cell"><img src="assets/images/code-example.jpg" alt="Пример кода"></div>                        
+      </div>             
+      <div class="content__table-row">
+        <div class="content__table-cell">Experience</div>
+        <div class="content__table-cell">
+            My project is <a target="_blank" href="https://office.arendator-spb.ru/">here</a>   
+        </div> 
+      </div>     
+      <div class="content__table-row">
+        <div class="content__table-cell">Education</div>
+        <div class="content__table-cell">SPbSU, 2008</div> 
+      </div>   
+      <div class="content__table-row">
+        <div class="content__table-cell">English level</div>
+        <div class="content__table-cell">B2</div> 
+      </div>  
     </div>
-</section>  
-<section class="experience">
-   <h2>Experience</h2>
-   <p>My project is <a href="/">here</a></p> 
-</section>  
-<section class="education">
-    <h2>Education</h2>
-    <p>SPbSU, 2008</p>
-    <h2>English level</h2>
-    <p>B2</p>
-</section> 
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__inner"></div>
+</footer>
 </body>
 </html>
