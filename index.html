@@ -61,23 +61,23 @@
         <h3 class="education__title">Education</h3>
         <ul class="education__list">
           <li class="education__item">
-            <span class="education__item-line">2006 - 2008</span>
-            <span class="education__item-line">Master's degree Sociology</span>
-            <span class="education__item-line">SPbSU</span>
+            <div class="education__item-line">2006 - 2008</в>
+            <div class="education__item-line">Master's degree Sociology</в>
+            <div class="education__item-line">SPbSU</в>
           </li>
           <li class="education__item">
-            <span class="education__item-line">2008</span>
-            <span class="education__item-line">HTML, CSS</span>
-            <span class="education__item-line">online courses</span>
+            <div class="education__item-line">2008</div>
+            <div class="education__item-line">HTML, CSS</div>
+            <div class="education__item-line">online courses</div>
           </li>
           <li class="education__item">
-            <span class="education__item-line">2012</span>
-            <span class="education__item-line">PHP (OOP, MVC)</span>
-            <span class="education__item-line">online courses</span>
+            <div class="education__item-line">2012</div>
+            <div class="education__item-line">PHP (OOP, MVC)</div>
+            <div class="education__item-line">online courses</div>
           </li>
           <li class="education__item">            
             <h3>English</h3>
-            <span class="education__item-line">B1</span>
+            <div class="education__item-line">B1</div>
           </li>
         </ul>            
       </aside>      
@@ -129,11 +129,11 @@ function check(str, bracketsConfig) {
   let brackets = {};
   let stack = [];
 
-  for (let i = 0; i < bracketsConfig.length; i++) {
+  for (let i = 0; i &lt; bracketsConfig.length; i++) {
     brackets[bracketsConfig[i][0]] = bracketsConfig[i][1];    
   }  
   
-  for (let j = 0; j < input.length; j++) {  
+  for (let j = 0; j &lt; input.length; j++) {  
     if (brackets[stack[stack.length - 1]] === input[j])  {
       stack.pop();        
     } else { 
