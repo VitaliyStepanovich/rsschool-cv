@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML CV </title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML CV </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">    
 </head>
 <body>      
 <header class="header">
   <div class="wrapper header__wrapper">
     <div class="hero">
       <div class="hero__image-wrapper">            
-        <img class="hero__image" src="assets/images/avatar.jpg" alt="Фото"> 
+        <img class="hero__image" src="assets/images/photo.jpg" alt="Фото"> 
       </div>     
       <div class="hero__content">
         <div class="hero__content-column">
           <h1 class="hero__title">Vitaly Garshin</h1>
-        <h2 class="hero__status">Junior Frontend Developer</h2> 
+        <h2 class="hero__status">Frontend Developer</h2> 
         </div> 
         <div class="hero__content-column">
-          <div class="hero__content-row">
+          <!--<div class="hero__content-row">
             <ul class="contacts">
               <li class="contacts__item">
                 <span class="contacts__type contacts__phone">Phone:</span>
-                <a class="contacts__link" href="tel:80000000000" rel="noopener noreferrer">+7 (000) 000-00-00</a>
-              </li>
+                <a class="contacts__link" href="tel:89210000000" rel="noopener noreferrer">+7 (931) XXX-XX-XX</a>
+              </li>          
               <li class="contacts__item">
                 <span class="contacts__type contacts__email">Email:</span> 
-                <a class="contacts__link" target="_blank" href="mailto:vitaliys.garshin@gmail.com" rel="noopener noreferrer">vitaliys.garshin@gmail.com</a>
+                <a class="contacts__link" href="mailto:vitaliys.garshin@gmail.com" target="_blank" rel="noopener noreferrer">vitaliys.garshin@gmail.com</a>
               </li>
             </ul>
-          </div>
+          </div>--> 
           <div class="hero__content-row">
-            <ul class="social">
+            <ul class="social hero__social">
               <li class="social__item">
-                <a class="social__link" href="https://www.facebook.com/vitaly.garshin.1" rel="noopener noreferrer">FB</a>            
+                <a class="social__link" href="https://www.facebook.com/vitaly.garshin.1" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Facebook icon</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#fff"/></svg>
+                </a>            
               </li>
               <li class="social__item">
-                <a class="social__link" href="https://github.com/VitaliyStepanovich" rel="noopener noreferrer">GitHub</a>            
+                <a class="social__link" href="https://github.com/VitaliyStepanovich" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#fff"/></svg>
+                </a>            
               </li>
             </ul>
-          </div>         
+          </div> 
+          <div class="hero__content-row">
+            <blockquote class="hero__blockquote">
+              My Credo - to get something you never had, you have to do something you never did.
+            </blockquote>  
+          </div>        
         </div>        
         
       </div>
@@ -50,52 +61,94 @@
 <main class="main">
   <div class="wrapper main__wrapper">
     <div class="main__left-column">
-      <section class="education">        
+      <aside class="education">        
         <h3 class="education__title">Education</h3>
         <ul class="education__list">
           <li class="education__item">
             <span class="education__item-line">2006 - 2008</span>
-            <span class="education__item-line">Master's degree (sociology)</span>
+            <span class="education__item-line">Master's degree Sociology</span>
             <span class="education__item-line">SPbSU</span>
           </li>
-        </ul>
-        <div class="content__table-cell">SPbSU, 2008</div> 
-      </section>      
+          <li class="education__item">
+            <span class="education__item-line">2008</span>
+            <span class="education__item-line">HTML, CSS</span>
+            <span class="education__item-line">online courses</span>
+          </li>
+          <li class="education__item">
+            <span class="education__item-line">2012</span>
+            <span class="education__item-line">PHP (OOP, MVC)</span>
+            <span class="education__item-line">online courses</span>
+          </li>
+          <li class="education__item">            
+            <h3>English</h3>
+            <span class="education__item-line">B1</span>
+          </li>
+        </ul>            
+      </aside>      
     </div>
-    <div class="main__right-column">
-      <section class="about">
-        <h3 class="about__title">About me</h3>        
-        <div class="about__text">
-          <blockquote class="about__blockquote">
-            To get something you never had, you have to do something you never did.
-          </blockquote>
-          <p>Add text ... </p>   
-        </div>
-      </section>
+    <div class="main__right-column">     
       <section class="experience">
         <h3 class="experience__title">Experience</h3>
-        <div class="table">         
-          <div class="table-row">
-            <div class="table-cell">Code example</div>
-            <div class="table-cell">
-              <figure>
-                <img class="experience__code" src="assets/images/code-example.jpg" alt="Пример кода">
-                <figcaption class="experience__code-caption">Code example</figcaption>
-            </figure>
-              
+        
+          <div class="row">
+            <div class="cell">              
+              <span class="experience__year">2016 - 2018</span>
+              <span class="experience__company">Personal Project </span>   
+            </div>
+            <div class="cell">
+             <span class="experience__position">Web Developer</span>
+             <span class="experience__description">
+              <ul class="experience__description">
+                <li class="experience__description-item">Built a real estate website.</li>
+                <li class="experience__description-item">Frontend: HTML5, CSS, JQuery.</li> 
+                <li class="experience__description-item">Backend: pure OOP PHP (MVC) with MySQL.</li>                    
+               </ul>                 
+             </span>        
             </div>                        
-          </div>             
-          <div class="table-row">
-            <div class="content__table-cell">Own project</div>
-            <div class="content__table-cell">
-                My project is <a href="https://office.arendator-spb.ru/" target="_blank" rel="noopener noreferrer">here</a>   
-            </div> 
-          </div>
-          <div class="content__table-row">
-            <div class="content__table-cell">English level</div>
-            <div class="content__table-cell">B2</div> 
-          </div>  
-        </div>      
+          </div>        
+          <div class="row">
+            <div class="cell">              
+              <span class="experience__year">2011 - 2015</span>
+              <span class="experience__company">Freelance</span>   
+            </div>
+            <div class="cell">
+             <span class="experience__position">Web Developer</span>
+             <ul class="experience__description">
+               <li class="experience__description-item">Built simple websites with Joomla, WordPress, ModX.</li>
+               <li class="experience__description-item">Managed a development team consisting of a designer, content manager, copywrighter.</li>
+              </ul>                   
+            </div>                        
+                                  
+        </div> 
+      </section>
+      <section class="code">
+        <h3 class="code__title">Code example</h3>
+        <pre>
+          <code>
+function check(str, bracketsConfig) {
+
+  if (str.length % 2 !== 0)  return false;
+
+  let input = str.split('');
+  let brackets = {};
+  let stack = [];
+
+  for (let i = 0; i < bracketsConfig.length; i++) {
+    brackets[bracketsConfig[i][0]] = bracketsConfig[i][1];    
+  }  
+  
+  for (let j = 0; j < input.length; j++) {  
+    if (brackets[stack[stack.length - 1]] === input[j])  {
+      stack.pop();        
+    } else { 
+      stack.push(input[j]);
+    }       
+  }
+
+  return stack.length === 0;
+}
+          </code> 
+        </pre>          
       </section>
       <section class="skills">
         <h3 class="skills__title">Skills</h3>
@@ -106,7 +159,7 @@
               <li class="level__tem level__item--colored"></li>
               <li class="level__tem level__item--colored"></li>
               <li class="level__tem level__item--colored"></li>
-              <li class="level__tem "></li>
+              <li class="level__tem"></li>
             </ul>    
             <span class="skills__item-level"></span>
           </li>
@@ -138,6 +191,15 @@
             </ul>                     
           </li>
           <li class="skills__item">
+            <span class="skills__item-text">Mysql</span>  
+            <ul class="level">
+              <li class="level__tem level__item--colored"></li>
+              <li class="level__tem level__item--colored"></li>
+              <li class="level__tem"></li>
+              <li class="level__tem "></li>
+            </ul>                     
+          </li>
+          <li class="skills__item">
             <span class="skills__item-text">GIT</span>  
             <ul class="level">
               <li class="level__tem level__item--colored"></li>
@@ -155,6 +217,15 @@
               <li class="level__tem "></li>
             </ul>              
           </li>
+          <li class="skills__item">            
+            <span class="skills__item-text">Photoshop</span>
+            <ul class="level">
+              <li class="level__tem level__item--colored"></li>
+              <li class="level__tem level__item--colored"></li>
+              <li class="level__tem"></li>
+              <li class="level__tem "></li>
+            </ul>              
+          </li>
        </ul> 
       </section>
     </div>
@@ -163,6 +234,13 @@
 <footer class="footer">
   <div class="wrapper footer__wrapper">
     <div class="copywrite">2021 Vitaly Garshin</div> 
+    <ul class="social footer__social">      
+      <li class="social__item">
+        <a class="social__link" href="https://github.com/VitaliyStepanovich" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon social-icon--mini" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#fff"/></svg>
+        </a>            
+      </li>
+    </ul>
   </div>
 </footer>
 </body>
