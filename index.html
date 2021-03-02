@@ -93,13 +93,13 @@
             </div>
             <div class="cell">
              <span class="experience__position">Web Developer</span>
-             <span class="experience__description">
+             <div class="experience__description">
               <ul class="experience__description">
                 <li class="experience__description-item">Built a real estate website.</li>
                 <li class="experience__description-item">Frontend: HTML5, CSS, JQuery.</li> 
                 <li class="experience__description-item">Backend: pure OOP PHP (MVC) with MySQL.</li>                    
                </ul>                 
-             </span>        
+             </div>        
             </div>                        
           </div>        
           <div class="row">
@@ -113,8 +113,7 @@
                <li class="experience__description-item">Built simple websites with Joomla, WordPress, ModX.</li>
                <li class="experience__description-item">Managed a development team consisting of a designer, content manager, copywrighter.</li>
               </ul>                   
-            </div>                        
-                                  
+            </div>               
         </div> 
       </section>
       <section class="code">
@@ -129,11 +128,11 @@ function check(str, bracketsConfig) {
   let brackets = {};
   let stack = [];
 
-  for (let i = 0; i < bracketsConfig.length; i++) {
+  for (let i = 0; i &lt; bracketsConfig.length; i++) {
     brackets[bracketsConfig[i][0]] = bracketsConfig[i][1];    
   }  
   
-  for (let j = 0; j < input.length; j++) {  
+  for (let j = 0; j &lt; input.length; j++) {  
     if (brackets[stack[stack.length - 1]] === input[j])  {
       stack.pop();        
     } else { 
